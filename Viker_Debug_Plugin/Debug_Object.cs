@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Viker_Debug_Object : MonoBehaviour {
+public class Debug_Object : MonoBehaviour {
 
 
 	//Ideas

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Viker_Debug_Controller : MonoBehaviour {
+public class Debug_Controller : MonoBehaviour {
 
 	private bool InDebugMode;
 
@@ -18,7 +18,7 @@ public class Viker_Debug_Controller : MonoBehaviour {
 
 	}
 
-	public static Viker_Debug_Controller instance;
+	public static Debug_Controller instance;
 
 	void Awake () {
 
@@ -44,11 +44,11 @@ public class Viker_Debug_Controller : MonoBehaviour {
 
 	public void UpdateDebugObjects () {
 
-		Viker_Debug_Object[] debugObjects = FindObjectsOfType ( typeof(Viker_Debug_Object) ) as Viker_Debug_Object[];
+		Debug_Object[] debugObjects = FindObjectsOfType ( typeof(Debug_Object) ) as Viker_Debug_Object[];
 
 		Debug.Log ("Updating " + debugObjects.Length + " debug objects");
 	
-		foreach (Viker_Debug_Object obj in debugObjects) {
+		foreach (Debug_Object obj in debugObjects) {
 
 			obj.SetVisible (IsInDebugMode);
 
